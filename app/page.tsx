@@ -1,11 +1,13 @@
+import styles from './page.module.css';
+import {Inter} from 'next/font/google';
+
+const inter = Inter({ subsets: ['latin'] });
+
 export default function Home() {
   return (
-    <div>
-      <h1>Welcome to NextSpace!</h1>
-      <p>
-        A next-gen social media app to connect with frens inspired by MySpace
-      </p>
-      <p>To get started, sign up for an account</p>
+    <div className={inter.className}>
+      Anarchy's on the way!
     </div>
   );
 }
+
